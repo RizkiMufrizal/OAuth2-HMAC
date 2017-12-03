@@ -36,6 +36,7 @@ repositories {
 
 dependencies {
     compile("commons-io:commons-io:${commonsIo}")
+    compile('org.springframework.boot:spring-boot-starter-hateoas')
     compile('org.springframework.security.oauth:spring-security-oauth2')
     compile('org.springframework.security:spring-security-jwt')
     compile('org.springframework.boot:spring-boot-starter-data-cassandra')
