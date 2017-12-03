@@ -1,0 +1,28 @@
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+spring:
+  jackson:
+    serialization:
+      indent-output: true
+
+  data:
+    cassandra:
+      keyspace-name: oauth2_hmac
+      cluster-name: Test Cluster
+      contact-points: 127.0.0.1
+      port: 9042
+      username: cassandra
+      password: cassandra
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    max-total: 128
+    max-idle: 128
+    min-idle: 16
+    min-evictable-idle-time-millis: 60
+    time-between-eviction-runs-millis : 30
+    block-when-exhausted : true
+    use-pool: true
